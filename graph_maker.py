@@ -1,3 +1,8 @@
+#created on 06/01/2024
+#basic python code to create a graph by determining the plotpoints and the x/y axis
+#first project so there will be probably inefficiencies in the code
+
+
 OL = "    "
 Xaxis_list = []
 I = int(input("enter the X axis: "))
