@@ -1,3 +1,7 @@
+#created on 27/12/2023
+#haven't been able to test it yet, so not sure if it actually works
+#work in progress
+
 import sys
 from scapy import *
 from scapy.layers.inet import *
