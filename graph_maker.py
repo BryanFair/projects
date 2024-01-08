@@ -62,11 +62,17 @@ split = Y_axis.splitlines()
 
 
 PP_list=[]
-#add warning if person goes over the y axis limit and let them retry also remind them of the limit
+
 for i in Xaxis_list:
     PP = int(input("\n now enter the plotpoint for {} on the x axis: ".format(i)))
-    PP_list.append(PP)
-    print("\n you have chosen: {}".format(PP))
+    while PP >  Xaxis_list[-1]:
+         print("WARNING, the number inputted is too big. \nenter something equal to or smaller than {}".format(Xaxis_list[-1]))
+         #asks for the number again
+         PP = int(input("\n now enter the plotpoint for {} on the x axis: ".format(i)))
+
+    if PP <= Xaxis_list[-1]:
+     PP_list.append(PP)
+     print("\n you have chosen: {}".format(PP))
 
 
 new_split = []
