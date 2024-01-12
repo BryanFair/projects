@@ -88,8 +88,6 @@ creation = input("\nwould like this graph to be inputted into a new txt document
 if creation == "Y" or creation == "y":
     name = input("\nwhat would you like this document to be called? ")
     name += ".txt"
-    
-    #check if the last character of location is \ if not add a \ to it
     location = input("\nwhere would you like it to be stored? (leave blank for the current directory): ")
     file = location + name
     open(file, 'w')
